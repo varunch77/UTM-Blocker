@@ -1,0 +1,15 @@
+body {
+    min-width:420px;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+#middle
+{
+    background-color: #EEEEEE;
+}
+
+a, a:hover, a:focus, a:active
+{
+        text-decoration: none;
+        color: inherit;  
+}
