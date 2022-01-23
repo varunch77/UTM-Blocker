@@ -5,7 +5,7 @@
     <link href="/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="popup_dark.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +21,7 @@
   </head>
 
   <body>
+    <!--
     <div class="container">
       <div class="row py-3">
         <div class="col-9">
@@ -73,6 +74,59 @@
         </div>
       </div>
     </div>
+  -->
+  <div class="container">
+    <div class="row py-3">
+      <div class="col-9">
+        <img src="icons/icon32.png" />
+        UTM<b>Blocker</b>
+      </div>
+      <div class="col-3 justify-content-end align-self-end d-flex">
+        <a
+          id="settings"
+          href="options.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fas fa-lg fa-cog"></i
+        ></a>
+      </div>
+    </div>
+    <div class="row pt-3 pb-1" id="middle">
+      <div class="col">
+        <div class="border shadow-sm rounded p-3 container bg-white">
+          <div class="col text-center">
+            <div class="text-center">
+              <b class="h5">Site Broken?</b><br />Turn off blockers and
+              reload: &emsp;<a href="" id="reload"><i class="fas fa-sync"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row py-3" id="middle">
+      <div class="col">
+        <div class="border shadow-sm rounded p-5 container bg-white">
+          <div class="text-center col font-weight-bold h2" id="title"></div>
+          <hr />
+          <div class="col text-center">
+            <div class="text-center fs-1">
+              Number of UTM codes that have been blocked
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-11">
+        <small
+          >If you find this tool helpful, consider buying me a coffee!</small
+        >
+      </div>
+      <div class="col-1 justify-content-end align-self-end d-flex">
+        <a href="paypal.com"><i class="fas fa-lg fa-coffee animate__animated animate__swing animate__slow"></i></a>
+      </div>
+    </div>
+  </div>
     <script src="content_script.js"></script>
     <script src="popup.js"></script>
     <script defer src="/fontawesome/js/brands.js"></script>

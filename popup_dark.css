@@ -1,0 +1,19 @@
+body {
+  min-width: 420px;
+  font-family: "Yantramanav", sans-serif;
+}
+
+#middle {
+  background-color: #2E2E2F;
+}
+
+a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: #1a1a1a;
+}
