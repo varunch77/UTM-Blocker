@@ -1,3 +1,16 @@
+window.onload = function () {
+  //let mode = getColorScheme();
+  let mode = "dark";
+  if (mode === "light") {
+    var light = document.getElementById("light-container");
+    light.classList.replace("d-none", "d-block");
+  }
+  else {
+    var dark = document.getElementById("dark-container");
+    dark.classList.replace("d-none", "d-block");
+  }
+};
+
 document.getElementById("reload").addEventListener("click", function () {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     const url = tabs[0].url;
@@ -17,6 +30,6 @@ document.getElementById("reload").addEventListener("click", function () {
     });
   });
   chrome.tabs.reload();
-  setTimeout(function () {}, 250);
+  setTimeout(function () { }, 250);
   chrome.tabs.reload();
 });

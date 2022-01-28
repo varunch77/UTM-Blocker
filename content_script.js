@@ -28,7 +28,8 @@ chrome.storage.local.get(["key_block"], function (result) {
   }
 });
 
-let title = document.getElementById("title");
+let elements = document.getElementsByClassName("number");
 chrome.storage.local.get(["key"], function (result) {
-  title.innerHTML = result.key;
+  elements[0].innerHTML = result.key;
+  elements[1].innerHTML = result.key;
 });
