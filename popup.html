@@ -75,58 +75,67 @@
       </div>
     </div>
   -->
-  <div class="container">
-    <div class="row py-3 dark">
-      <div class="col-9 text-light">
-        <img src="icons/icon32.png" />
-        UTM<b>Blocker</b>
+    <div class="container dark">
+      <div class="row py-3">
+        <div class="col-9 muted-text">
+          <img src="icons/icon32.png" />
+          UTM<b>Blocker</b>
+        </div>
+        <div class="col-3 justify-content-end align-self-end d-flex">
+          <a
+            id="settings"
+            href="options.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fas fa-lg fa-cog"></i
+          ></a>
+        </div>
       </div>
-      <div class="col-3 justify-content-end align-self-end d-flex">
-        <a
-          id="settings"
-          href="options.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fas fa-lg fa-cog"></i
-        ></a>
-      </div>
-    </div>
-    <div class="row pt-3 pb-1 dark">
-      <div class="col">
-        <div class="border border-dark shadow-sm rounded p-3 container bg-dark">
-          <div class="col text-center">
-            <div class="text-center text-light">
-              <b class="h5">Site Broken?</b><br />Turn off blockers and
-              reload: &emsp;<a href="" id="reload"><i class="fas fa-sync"></i></a>
+      <div class="row pt-3 pb-1">
+        <div class="col">
+          <div class="border border-dark shadow-sm rounded p-3 container bg-dark">
+            <div class="col text-center">
+              <div class="text-center muted-text">
+                <b class="h5">Site Broken?</b><br />Turn off blockers and
+                reload: &emsp;<a href="" id="reload"
+                  ><i class="fas fa-sync"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row py-3 dark">
-      <div class="col">
-        <div class="border border-dark shadow-sm rounded p-5 container bg-dark">
-          <div class="text-center col font-weight-bold h2 text-light" id="title"></div>
-          <hr />
-          <div class="col text-center"> 
-            <div class="text-center text-light fs-1">
-              Number of UTM codes that have been blocked
+      <div class="row py-3">
+        <div class="col">
+          <div class="border border-dark shadow-sm rounded p-5 container bg-dark">
+            <div
+              class="text-center col font-weight-bold h2 muted-text"
+              id="title"
+            ></div>
+            <hr class="lightDivider"/>
+            <div class="col text-center">
+              <div class="text-center muted-text fs-1">
+                Number of UTM codes that have been blocked
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row py-3 dark">
-      <div class="col-11 text-light">
-        <small
-          >If you find this tool helpful, consider buying me a coffee!</small
-        >
+      <div class="row py-3">
+        <div class="col-11 muted-text">
+          <small
+            >If you find this tool helpful, consider buying me a coffee!</small
+          >
+        </div>
+        <div class="col-1 justify-content-end align-self-end d-flex">
+          <a href="paypal.com"
+            ><i
+              class="fas fa-lg fa-coffee animate__animated animate__swing animate__slow"
+            ></i
+          ></a>
+        </div>
       </div>
-      <div class="col-1 justify-content-end align-self-end d-flex">
-        <a href="paypal.com"><i class="fas fa-lg fa-coffee animate__animated animate__swing animate__slow"></i></a>
-      </div>
     </div>
-  </div>
     <script src="content_script.js"></script>
     <script src="popup.js"></script>
     <script defer src="/fontawesome/js/brands.js"></script>
