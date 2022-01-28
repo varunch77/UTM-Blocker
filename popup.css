@@ -7,6 +7,18 @@ body {
   background-color: #eeeeee;
 }
 
+.dark {
+  background-color: #2E2E2F;
+}
+
+.lightDivider {
+  border-color: white;
+}
+
+.muted-text {
+  color: #D4D4D4;
+}
+
 a {
   text-decoration: none;
   color: #4b4b4b;
@@ -17,3 +29,16 @@ a:active {
   text-decoration: none;
   color: #1a1a1a;
 }
+
+/* non-overlapping dark mode code
+a {
+  text-decoration: none;
+  color: #616161;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: #757575;
+}
+*/
