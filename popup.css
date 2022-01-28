@@ -19,26 +19,27 @@ body {
   color: #D4D4D4;
 }
 
-a {
-  text-decoration: none;
-  color: #4b4b4b;
-}
+a,
 a:hover,
 a:focus,
 a:active {
   text-decoration: none;
+}
+
+.light-icons {
+  color: #4b4b4b;
+}
+.light-icons:hover,
+.light-icons:focus,
+.light-icons:active {
   color: #1a1a1a;
 }
 
-/* non-overlapping dark mode code
-a {
-  text-decoration: none;
+.dark-icons {
   color: #616161;
 }
-a:hover,
-a:focus,
-a:active {
-  text-decoration: none;
+.dark-icons:hover,
+.dark-icons:focus,
+.dark-icons:active {
   color: #757575;
 }
-*/
