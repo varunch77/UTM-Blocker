@@ -1,14 +1,14 @@
 window.onload = function () {
-  //let mode = getColorScheme();
-  let mode = "dark";
-  if (mode === "light") {
-    var light = document.getElementById("light-container");
-    light.classList.replace("d-none", "d-block");
-  }
-  else {
-    var dark = document.getElementById("dark-container");
-    dark.classList.replace("d-none", "d-block");
-  }
+  chrome.storage.local.get(["key_theme"], function (theme) {
+    if (theme.key_theme === "light") {
+      var light = document.getElementById("light-container");
+      light.classList.replace("d-none", "d-block");
+    }
+    else {
+      var dark = document.getElementById("dark-container");
+      dark.classList.replace("d-none", "d-block");
+    }
+  });
 };
 
 document.getElementById("reload").addEventListener("click", function () {
