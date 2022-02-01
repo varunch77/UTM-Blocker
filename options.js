@@ -7,6 +7,16 @@ window.onload = function () {
             checkbox.setAttribute("checked", "");
         }
     });
+    chrome.storage.local.get(["key_block"], function (result) {
+        let table = document.getElementsByClassName("table")[0];
+        for (let i = 0; i < result.key_block.length; i++) {
+            let row = table.insertRow();
+            let websiteUrl = row.insertCell(0);
+            websiteUrl.innerHTML = result.key_block[i];
+            let removeIcon = row.insertCell(1);
+            removeIcon.innerHTML = "<i class='fas fa-minus-circle'></i>";
+        }
+    });
 };
 
 document.getElementById("theme").addEventListener("change", function () {
