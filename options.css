@@ -2,3 +2,19 @@ body{
     background-color: #eeeeee;
     font-family: "Yantramanav", sans-serif;
 }
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+.light-icons {
+    color: #4b4b4b;
+  }
+  .light-icons:hover,
+  .light-icons:focus,
+  .light-icons:active {
+    color: #1a1a1a;
+  }

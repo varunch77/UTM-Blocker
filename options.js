@@ -14,10 +14,27 @@ window.onload = function () {
             let websiteUrl = row.insertCell(0);
             websiteUrl.innerHTML = result.key_block[i];
             let removeIcon = row.insertCell(1);
-            removeIcon.innerHTML = "<i class='fas fa-minus-circle'></i>";
+            removeIcon.innerHTML = "<a href='' class='icons light-icons'><i class='fas fa-minus-circle'></i></a>";
+            removeIcon.setAttribute("id", i.toString());
         }
     });
 };
+
+Array.from(document.getElementsByClassName('.fas')).forEach(icon => {
+    icon.addEventListener('click', function() {
+        alert("click");
+        chrome.storage.local.get(["key_block"], function (result) {
+            let table = document.getElementsByClassName("table")[0];
+            table.deleteRow(parseInt(icon.id));
+            result.key_block = result.key_block.splice(parseInt(icon.id), 1);
+            alert(result.key_block);
+            chrome.storage.local.set({ key_block: result.key_block }, function () {
+                console.log("list updated");
+              });
+        });
+    });
+  });
+
 
 document.getElementById("theme").addEventListener("change", function () {
     if (this.checked) {
