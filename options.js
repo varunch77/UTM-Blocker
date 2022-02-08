@@ -1,10 +1,15 @@
 window.onload = function () {
     chrome.storage.local.get(["key_theme"], function (theme) {
         if (theme.key_theme === "light") {
+            document.body.style.background = "#eeeeee";
+            document.getElementById("options-body").classList.add("bg-white");
         }
         else {
             var checkbox = document.getElementById("theme");
             checkbox.setAttribute("checked", "");
+            document.body.style.background = "#2E2E2F";
+            document.getElementById("options-body").classList.add("bg-dark");
+            document.getElementById("options-body").classList.add("muted-text");
         }
     });
     chrome.storage.local.get(["key_block"], function (result) {
@@ -32,10 +37,12 @@ document.getElementById("theme").addEventListener("change", function () {
         chrome.storage.local.set({ key_theme: "dark" }, function () {
             console.log("theme preference updated");
         });
+        chrome.tabs.reload();
     }
     else {
         chrome.storage.local.set({ key_theme: "light" }, function () {
             console.log("theme preference updated");
         });
+        chrome.tabs.reload();
     }
 });

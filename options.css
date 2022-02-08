@@ -1,6 +1,9 @@
 body{
-    background-color: #eeeeee;
     font-family: "Yantramanav", sans-serif;
+}
+
+.muted-text {
+  color: #D4D4D4;
 }
 
 a,
