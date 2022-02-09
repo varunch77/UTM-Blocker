@@ -1,9 +1,13 @@
-body{
-    font-family: "Yantramanav", sans-serif;
+body {
+  font-family: "Yantramanav", sans-serif;
 }
 
 .muted-text {
-  color: #D4D4D4;
+  color: #d4d4d4;
+}
+
+.lightDivider {
+  border-color: white;
 }
 
 a,
@@ -14,10 +18,19 @@ a:active {
 }
 
 .light-icons {
-    color: #4b4b4b;
-  }
-  .light-icons:hover,
-  .light-icons:focus,
-  .light-icons:active {
-    color: #1a1a1a;
-  }
+  color: #4b4b4b;
+}
+.light-icons:hover,
+.light-icons:focus,
+.light-icons:active {
+  color: #1a1a1a;
+}
+
+.dark-icons {
+  color: #616161;
+}
+.dark-icons:hover,
+.dark-icons:focus,
+.dark-icons:active {
+  color: #757575;
+}
