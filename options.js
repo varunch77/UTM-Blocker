@@ -5,6 +5,7 @@ window.onload = function () {
             theme_mode = "light";
             document.body.style.background = "#eeeeee";
             document.getElementById("options-body").classList.add("bg-white");
+            document.getElementById("options-body").classList.add("border-white");
         }
         else {
             theme_mode = "dark";
@@ -13,6 +14,7 @@ window.onload = function () {
             document.body.style.background = "#2E2E2F";
             document.getElementById("options-body").classList.add("bg-dark");
             document.getElementById("options-body").classList.add("muted-text");
+            document.getElementById("options-body").classList.add("border-dark");
             document.getElementsByTagName("tbody")[0].classList.add("muted-text");
             let dividers = document.getElementsByTagName("hr");
             for (let m = 0; m < dividers.length; m++)
