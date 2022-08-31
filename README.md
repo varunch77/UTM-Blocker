@@ -1,3 +1,4 @@
+![](https://user-images.githubusercontent.com/48163435/187776724-f7d9f44b-14a7-4bb2-98d1-03224fd39510.png)
 # UTM-Blocker
 
 A simple extension that trims UTM and fbclid embedded links on the pages that you visit. Stop creepy trackers from following your browsing activity and shorten URLs in your address bar.
